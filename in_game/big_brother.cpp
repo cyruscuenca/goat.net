@@ -172,10 +172,10 @@ done:
 
 
 void Method(const FunctionCallbackInfo<Value>& args) {
-  CaptureAnImage();
-  Isolate* isolate = args.GetIsolate();
-  args.GetReturnValue().Set(String::NewFromUtf8(
-      isolate, "world", NewStringType::kNormal).ToLocalChecked());
+    HWND hwnd = GetActiveWindow();
+    CaptureAnImage(hwnd);
+    Isolate* isolate = args.GetIsolate();
+    args.GetReturnValue().Set(String::NewFromUtf8(isolate, "world", NewStringType::kNormal).ToLocalChecked());
 }
 
 void Initialize(Local<Object> exports) {
