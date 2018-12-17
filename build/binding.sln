@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "big_brother", "big_brother.vcxproj", "{C56A5770-8C65-C46F-4A05-7648CECDBF27}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "supervisor", "supervisor.vcxproj", "{7A46A8B1-CD9D-D695-95FA-602B2F6EFBDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A46A8B1-CD9D-D695-95FA-602B2F6EFBDD}.Debug|x64.ActiveCfg = Debug|x64
+		{7A46A8B1-CD9D-D695-95FA-602B2F6EFBDD}.Debug|x64.Build.0 = Debug|x64
+		{7A46A8B1-CD9D-D695-95FA-602B2F6EFBDD}.Release|x64.ActiveCfg = Release|x64
+		{7A46A8B1-CD9D-D695-95FA-602B2F6EFBDD}.Release|x64.Build.0 = Release|x64
+		{C56A5770-8C65-C46F-4A05-7648CECDBF27}.Debug|x64.ActiveCfg = Debug|x64
+		{C56A5770-8C65-C46F-4A05-7648CECDBF27}.Debug|x64.Build.0 = Debug|x64
+		{C56A5770-8C65-C46F-4A05-7648CECDBF27}.Release|x64.ActiveCfg = Release|x64
+		{C56A5770-8C65-C46F-4A05-7648CECDBF27}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

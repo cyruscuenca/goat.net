@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GOAT.NET</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="public/css/main.css" />
+	    <link rel="stylesheet" href="public/css/animate.css" />
+        <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+        <script src="public/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+        <script>if (window.module) module = window.module;</script>
+        <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <section class="listMenu">                    
+                <div class="searchContainer">
+                    <div id="searchBtn">Add Friends</div>
+                    <div id="searchBoxCont"></div>
+                    <form id="searchBox">
+                        <input type="text" name="friendQuery" placeholder="Search by Uplay name">
+                    </form> 
+                </div>
+                <div id="userBox">
+                    <ul>
+                        <li id="homeTab"><a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z"/><path id="homeGlyph" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"/></svg>
+                            <span class="noSelect">Home</span>
+                        </a></li>
+                        <li id="teamsTab"><a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/>
+                            <path id="teamsGlyph" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                            <span class="noSelect">Teams</span>
+                        </a></li>
+                        <li id="friendsTab"><a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="friendsGlyph" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                            <span class="noSelect">Friends</span>
+                        </a></li>
+                    </ul>
+                    <div class="statusBox">
+                        <a class="profileImage"></a>
+                        <div>
+                            <h3></h3>
+                            <a></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                </ul>
+            </section>
+            <section id="pageWindow">
+                <div id="locationBar">
+                    <div id="locationBarContents">
+                    </div>
+                </div>
+                <div id="pageContent">
+                    <div id="status"></div>
+                    <div id="chatLog">
+                    </div>
+                    <form id="messageForm">
+                        <div>
+                            <textarea id="message" placeholder="Enter your message"></textarea>
+                            <input type="submit" value="Send Message" class="btn btnOrange">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script src="public/js/app.js"></script>
+        <script>//var username = ("{{user.username}}");</script>
+        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
+    </body>
+</html>

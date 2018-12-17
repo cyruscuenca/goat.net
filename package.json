@@ -1,0 +1,24 @@
+{
+  "name": "GOAT.NET",
+  "version": "1.0.0",
+  "description": "A Rainbow 6 scrim manager and anti cheat.",
+  "main": "index.js",
+  "gypfile": true,
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Cyrus Cuenca",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^3.0.6",
+    "electron-rebuild": "^1.8.2"
+  },
+  "dependencies": {
+    "accurate-timer-js": "^0.1.1",
+    "bindings": "^1.3.0",
+    "macaddress": "^0.2.9",
+    "nan": "^2.11.1",
+    "node-gyp": "^3.8.0",
+    "socket.io-client": "^2.1.1"
+  }
+}
