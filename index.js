@@ -31,7 +31,7 @@ macaddress.one(function (err, mac) {
 console.log(exec("wmic CPU get ProcessorId", puts));
 console.log(hardDriveID);
 
-var supervisor = require('bindings')('supervisor');
-supervisor();
-var big_brother = require('bindings')('big_brother');
-big_brother();
+var addon = require('bindings')('supervisor');
+addon.supervisor();
+//ar big_brother = require('bindings')('big_brother');
+//big_brother();

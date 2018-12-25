@@ -11,18 +11,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8E24AA1B-DE8F-6B4E-DF3C-0E8F968CF985}</ProjectGuid>
+    <ProjectGuid>{7A46A8B1-CD9D-D695-95FA-602B2F6EFBDD}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>supervisor</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
   <PropertyGroup Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Label="Locals">
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
@@ -47,16 +48,15 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\akra\.node-gyp\10.13.0\include\node;C:\Users\akra\.node-gyp\10.13.0\src;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\config;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\openssl\include;C:\Users\akra\.node-gyp\10.13.0\deps\uv\include;C:\Users\akra\.node-gyp\10.13.0\deps\zlib;C:\Users\akra\.node-gyp\10.13.0\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\include\node;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\src;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\config;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\openssl\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\uv\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\zlib;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj /MP %(AdditionalOptions)</AdditionalOptions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <DebugInformationFormat>OldStyle</DebugInformationFormat>
-      <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4351;4355;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ExceptionHandling>false</ExceptionHandling>
       <MinimalRebuild>false</MinimalRebuild>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OmitFramePointers>false</OmitFramePointers>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -68,7 +68,7 @@
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\akra\.node-gyp\10.13.0\x64\node.lib&quot;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\x64\iojs.lib&quot;</AdditionalDependencies>
       <AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
       <AllowIsolation>true</AllowIsolation>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -83,24 +83,23 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\akra\.node-gyp\10.13.0\include\node;C:\Users\akra\.node-gyp\10.13.0\src;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\config;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\openssl\include;C:\Users\akra\.node-gyp\10.13.0\deps\uv\include;C:\Users\akra\.node-gyp\10.13.0\deps\zlib;C:\Users\akra\.node-gyp\10.13.0\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\include\node;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\src;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\config;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\openssl\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\uv\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\zlib;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=supervisor;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_NODE_EXTENSION;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\akra\.node-gyp\10.13.0\include\node;C:\Users\akra\.node-gyp\10.13.0\src;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\config;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\openssl\include;C:\Users\akra\.node-gyp\10.13.0\deps\uv\include;C:\Users\akra\.node-gyp\10.13.0\deps\zlib;C:\Users\akra\.node-gyp\10.13.0\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\include\node;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\src;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\config;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\openssl\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\uv\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\zlib;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <DebugInformationFormat>OldStyle</DebugInformationFormat>
-      <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4351;4355;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ExceptionHandling>false</ExceptionHandling>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <OmitFramePointers>true</OmitFramePointers>
       <Optimization>Full</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -114,10 +113,10 @@
       <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
     <Lib>
-      <AdditionalOptions>/LTCG:INCREMENTAL %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\akra\.node-gyp\10.13.0\x64\node.lib&quot;</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\x64\iojs.lib&quot;</AdditionalDependencies>
       <AdditionalOptions>/ignore:4199 /LTCG:INCREMENTAL %(AdditionalOptions)</AdditionalOptions>
       <AllowIsolation>true</AllowIsolation>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -134,7 +133,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\akra\.node-gyp\10.13.0\include\node;C:\Users\akra\.node-gyp\10.13.0\src;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\config;C:\Users\akra\.node-gyp\10.13.0\deps\openssl\openssl\include;C:\Users\akra\.node-gyp\10.13.0\deps\uv\include;C:\Users\akra\.node-gyp\10.13.0\deps\zlib;C:\Users\akra\.node-gyp\10.13.0\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\include\node;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\src;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\config;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\openssl\openssl\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\uv\include;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\zlib;C:\Users\Ying\.electron-gyp\.node-gyp\iojs-3.0.6\deps\v8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=supervisor;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;BUILDING_NODE_EXTENSION;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
@@ -143,7 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\in_game\supervisor.cpp"/>
-    <ClCompile Include="C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
+    <ClCompile Include="C:\web\sites\goat.net\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
